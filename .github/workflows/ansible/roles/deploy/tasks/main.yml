@@ -16,17 +16,17 @@
     dest: "/home/ubuntu/server"
 
 
-- name: Pull backend image
-  community.docker.docker_image:
-    name: "{{ backend_image }}"
-    tag: "{{ backend_tag }}"
-    source: pull
+# - name: Pull backend image
+#   community.docker.docker_image:
+#     name: "{{ backend_image }}"
+#     tag: "{{ backend_tag }}"
+#     source: pull
 
-- name: Pull frontend image
-  community.docker.docker_image:
-    name: "{{ frontend_image }}"
-    tag: "{{ frontend_tag }}"
-    source: pull
+# - name: Pull frontend image
+#   community.docker.docker_image:
+#     name: "{{ frontend_image }}"
+#     tag: "{{ frontend_tag }}"
+#     source: pull
 
 - name: Run docker compose
   become: True
