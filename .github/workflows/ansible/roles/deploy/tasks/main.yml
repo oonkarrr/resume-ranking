@@ -15,11 +15,6 @@
     src: "/home/ubuntu/server/artifact.zip"
     dest: "/home/ubuntu/server"
 
-- name: Pull analysis service image
-  community.docker.docker_image:
-    name: "{{ analysis_service_image }}"
-    tag: "{{ analysis_service_tag }}"
-    source: pull
 
 - name: Pull backend image
   community.docker.docker_image:
